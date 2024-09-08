@@ -1,0 +1,278 @@
+//Header Start
+.header {
+    background-color: $bgcolor;
+
+    .top {
+        padding: 5px 0;
+
+        .container {
+
+            .row {
+                .col-5 {
+                    a {
+                        text-decoration: none;
+                        color: $secondarycolor;
+
+                        &:hover {
+                            color: $secondarycolorhover;
+                        }
+                    }
+                }
+
+                .col-7 {
+                    span {
+                        font-size: 13px;
+                        font-weight: 200;
+
+                        // font-family: "EB Garamond", serif;
+                        &:hover {
+                            color: $primarycolorhover;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .mid {
+        background-color: $white;
+        padding: 13px 0;
+
+        .container {
+            .row {
+                .col-6 {
+                    h1 {
+                        font-size: 54px;
+                        font-weight: 400;
+                    }
+                }
+
+                .col-6 {
+                    .lang {
+                        h5 {
+                            font-size: 20px;
+                            font-weight: 400;
+
+                            &:hover {
+                                color: $primarycolorhover;
+                            }
+                        }
+                    }
+
+                    .navbar {
+                        .container {
+                            .offcanvas {
+                                transition: 0.6s;
+
+                                .offcanvas-body {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    padding: 0 35px 35px 0;
+                                    align-items: center;
+
+
+                                    .offcanvas-title {
+                                        font-size: 32px;
+                                        font-weight: 600;
+                                        align-self: start;
+                                        padding-bottom: 15px;
+                                    }
+
+                                    .box {
+                                        width: 70%;
+                                        padding-bottom: 15px;
+
+                                        .box-img {
+                                            overflow: hidden;
+
+                                            img {
+                                                width: 100%;
+                                                object-fit: contain;
+                                                transition: 0.5s;
+
+                                                &:hover {
+                                                    transform: scale(120%);
+                                                }
+                                            }
+                                        }
+
+                                        h6 {
+                                            font-size: 22px;
+                                            font-weight: 600;
+
+                                            &:hover {
+                                                color: $primarycolorhover;
+                                                text-decoration: underline;
+                                            }
+                                        }
+
+                                        p {
+                                            font-size: 20px;
+                                            font-weight: 400;
+                                            color: $secondarycolor;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .mid-scroll {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        align-items: center;
+        background-color: $white;
+        width: 100%;
+        padding: 8px 0;
+
+        .container {
+            ul {
+                position: relative;
+                list-style: none;
+                gap: 35px;
+
+                .dropdown {
+                    &:hover {
+                        .dropdown-menu {
+                            display: block;
+                        }
+                    }
+
+                    .dropdown-menu {
+                        display: none;
+                    }
+
+                    ul {
+                        position: absolute;
+                        left: 0px;
+                        top: 50px;
+                        background-color: $white;
+                        color: rgb(29, 29, 29);
+                        border-radius: 10%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        text-align: start;
+
+                        & :hover {
+                            color: $primarycolorhover;
+                        }
+
+                        li {
+                            width: 250px;
+
+                            a {
+                                h1 {
+                                    color: #101828;
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+            }
+        }
+    }
+
+    .bottom {
+        padding: 4px 0;
+
+        .container {
+            ul {
+                position: relative;
+                list-style: none;
+                gap: 35px;
+
+                .dropdown {
+                    &:hover {
+                        .dropdown-menu {
+                            display: block;
+                        }
+                    }
+
+                    .dropdown-menu {
+                        display: none;
+                    }
+
+                    .travel {
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        align-items: center;
+                        text-align: center;
+                        justify-content: space-between;
+                        gap: 25px;
+                        width: 350px;
+                        height: 250px;
+
+                        li {
+                            .dropdown-item {
+                                display: inline;
+                                width: 350px;
+                                height: 250px;
+
+                                img {
+                                    width: 80%;
+                                    height: 150px;
+                                }
+
+                                h5 {
+                                    font-size: 15px;
+                                    font-weight: 600;
+                                    line-height: 22px;
+                                    width: 100%;
+                                    overflow: visible;
+                                }
+
+                                p {
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    line-height: 27px;
+                                }
+                            }
+                        }
+                    }
+
+                    ul {
+                        position: absolute;
+                        left: 0px;
+                        top: 35px;
+                        background-color: $white;
+                        color: rgb(29, 29, 29);
+                        border-radius: 10%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        text-align: start;
+
+                        & :hover {
+                            color: $primarycolorhover;
+                        }
+
+                        li {
+                            width: 250px;
+
+                            a {
+                                h1 {
+                                    color: #101828;
+                                }
+
+                            }
+                        }
+
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+//header end
